@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif, "Poppins";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #191946;
+}
+.contain {
+  background: linear-gradient(135deg, red, orange);
+  max-width: 350px;
+  width: 90%;
+  border-radius: 20px;
+  padding: 30px;
+}
+.contain header {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: white;
+}
+.contain .inputs {
+  height: 40px;
+  margin-bottom: 20px;
+}
+input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+input:focus {
+  border: 1px solid #191946;
+}
+.contain .qrcode {
+  width: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+.qrcode img {
+  width: 100%;
+  padding: 10px;
+}
+.qrcode.show {
+  max-height: 300px;
+  margin: 5px auto;
+  border: 1px solid black;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.btn button {
+  width: 100%;
+  height: 100%;
+  background-color: #191946;
+  padding: 0 10px;
+  color: white;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
